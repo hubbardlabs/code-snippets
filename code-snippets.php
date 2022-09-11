@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Code Snippets
-Plugin URI: https://gravityforms.com
+Plugin URI: https://github.com/hubbardlabs/code-snippets/
 Description: A simple plugin to create a code snippets Custom Post Type.
 Version: 0.0.1
 Requires at least: 4.0
@@ -9,6 +9,7 @@ Requires PHP: 7.0
 Author: Hubbard Labs
 Author URI: https://hubbardlabs.com
 License: GPL-2.0+
+Update URI: https://github.com/hubbardlabs/code-snippets/
 Text Domain: hubbardlabs
 Domain Path: /languages
 */
