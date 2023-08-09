@@ -50,7 +50,7 @@ function hlabs_snippets() {
 	);
 	$rewrite = array(
 		'slug'                  => 'code',
-		'with_front'            => true,
+		'with_front'            => false,
 		'pages'                 => true,
 		'feeds'                 => true,
 	);
@@ -110,6 +110,11 @@ function hlabs_code_categories() {
 		'items_list'                 => __( 'Categories list', 'hubbardlabs' ),
 		'items_list_navigation'      => __( 'Categories list navigation', 'hubbardlabs' ),
 	);
+	$rewrite = array(
+		'slug'                       => 'code/categories',
+		'with_front'                 => false,
+		'hierarchical'               => true,
+	);
 	$args = array(
 		'labels'                     => $labels,
 		'hierarchical'               => true,
@@ -118,7 +123,8 @@ function hlabs_code_categories() {
 		'show_admin_column'          => true,
 		'show_in_nav_menus'          => true,
 		'show_tagcloud'              => true,
-		'query_var'                  => 'category',
+		'query_var'                  => 'code-category',
+		'rewrite'                    => $rewrite,
 		'show_in_rest'               => true,
 	);
 	register_taxonomy( 'hlabs-code-category', array( 'hlabs-snippet' ), $args );
@@ -155,6 +161,11 @@ function hlabs_code_tags() {
 		'items_list'                 => __( 'Tags list', 'hubbardlabs' ),
 		'items_list_navigation'      => __( 'Tags list navigation', 'hubbardlabs' ),
 	);
+	$rewrite = array(
+		'slug'                       => 'code/tags',
+		'with_front'                 => false,
+		'hierarchical'               => false,
+	);
 	$args = array(
 		'labels'                     => $labels,
 		'hierarchical'               => false,
@@ -163,7 +174,8 @@ function hlabs_code_tags() {
 		'show_admin_column'          => true,
 		'show_in_nav_menus'          => true,
 		'show_tagcloud'              => true,
-		'query_var'                  => 'tag',
+		'query_var'                  => 'code-tag',
+		'rewrite'                    => $rewrite,
 		'show_in_rest'               => true,
 	);
 	register_taxonomy( 'hlabs-code-tag', array( 'hlabs-snippet' ), $args );
