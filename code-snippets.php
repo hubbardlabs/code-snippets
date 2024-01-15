@@ -1,10 +1,9 @@
 <?php
-Author: Hubbard Labs
 /**
  * Plugin Name: HubbardLabs - Code Snippets
  * Plugin URI: https://github.com/hubbardlabs/code-snippets/
  * Description: A simple plugin to create a code snippets Custom Post Type.
- * Version: 0.0.1
+ * Version: 1.0.0
  * Requires at least: 4.0
  * Requires PHP: 7.0
  * Author: Hubbard Labs
