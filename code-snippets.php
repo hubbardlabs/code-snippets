@@ -78,7 +78,7 @@ if ( ! class_exists( 'HLabs_Code_Snippets' ) ) {
 				'label'               => __( 'Code Snippet', 'hubbardlabs' ),
 				'description'         => __( 'A code Snippet', 'hubbardlabs' ),
 				'labels'              => $labels,
-				'supports'            => array( 'title', 'editor', 'thumbnail', 'comments', 'trackbacks', 'revisions', 'post-formats' ),
+				'supports'            => array( 'title', 'editor', 'excerpt', 'thumbnail', 'comments', 'trackbacks', 'revisions', 'post-formats' ),
 				'hierarchical'        => false,
 				'public'              => true,
 				'show_ui'             => true,
